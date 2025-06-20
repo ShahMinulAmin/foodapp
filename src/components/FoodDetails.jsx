@@ -4,7 +4,7 @@ import styles from "./fooddetails.module.css";
 
 export default function FoodDetails({ foodId }) {
   const URL = `https://api.spoonacular.com/recipes/${foodId}/information`;
-  const API_KEY = "1de8c349330844c7b8eb7ea6d013151a";
+  const API_KEY = import.meta.env.VITE_SPOONACULAR_API_KEY;
 
   const [food, setFood] = useState({});
   const [isLoading, setIsLoading] = useState(true);
