@@ -1,0 +1,12 @@
+{
+  "json": {
+    "enabled": true,
+    "output": "cypress/cucumber-json",
+    "formatter": "cucumber-json-formatter"
+  },
+  "stepDefinitions": [
+    "cypress/e2e/[filepath]/**/*.{js,ts}",
+    "cypress/e2e/[filepath].{js,ts}",
+    "cypress/support/step_definitions/**/*.{js,ts}"
+  ]
+} 
