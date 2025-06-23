@@ -7,7 +7,6 @@ export default defineConfig({
   base: "/foodapp",
   test: {
     globals: true,
-    environment: 'jsdom',
-    setupFiles: './src/test/setup.js',
+    environment: "jsdom",
   },
 });
